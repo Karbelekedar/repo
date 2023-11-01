@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialog using ES6</title>
+  </head>
+  <body>
+    <h1>Display Dialog using ES6</h1>
+    <button id="btn-alert">Click me for alerts</button>
+    <button id="btn-confirm">Click me for confirm</button>
+    <button id="btn-prompt">Click me for prompt</button>
+    <h1 id="res">Results are Displayed here!!</h1>
+  </body>
+  <script>
+    let btnAlert = document.getElementById("btn-alert");
+    let btnConfirm = document.getElementById("btn-confirm");
+    let btnPrompt = document.getElementById("btn-prompt");
+    let res = document.getElementById("res");
+
+    btnAlert.addEventListener("click", () => {
+      window.alert("An alert was triggered!!!");
+    });
+
+    btnConfirm.addEventListener("click", () => {
+      window.confirm("Do you want to confirm??");
+    });
+
+    btnPrompt.addEventListener("click", () => {
+      let age = window.prompt("What is your age : ", "Default Value");
+      if (age >= 18) {
+        // console.log("You are an Adult!");
+        res.innerHTML = "You are an Adult";
+      } else {
+        // console.log("You are not an Adult");
+        res.innerHTML = "You are not an Adult";
+      }
+    });
+  </script>
+</html>

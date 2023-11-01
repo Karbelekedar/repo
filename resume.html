@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f3f3f3;
+      }
+      .resume {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      .profile-img {
+        width: 150px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+        border: 2px solid #333;
+        border-radius: 10px; /* Adjust border-radius to make it square */
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="resume">
+        <header class="row">
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+            id="image-container"
+          >
+            <img
+              class="profile-img"
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2ZpbGUlMjAxNTAxNTB8ZW58MHx8MHx8fDA%3D"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="col-md-8">
+            <h1>John Doe</h1>
+            <p>Web Developer</p>
+            <p>Email: johndoe@email.com | Phone: (123) 456-7890</p>
+          </div>
+        </header>
+
+        <section class="mb-4">
+          <h2 class="section-title">Summary</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
+            dui a justo auctor malesuada.
+          </p>
+        </section>
+
+        <section class="mb-4">
+          <h2 class="section-title">Experience</h2>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Senior Web Developer</h5>
+              <p class="card-text">Company ABC - 2020 to Present</p>
+              <p class="card-text">
+                Responsibilities: Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Web Developer</h5>
+              <p class="card-text">Company XYZ - 2018 to 2020</p>
+              <p class="card-text">
+                Responsibilities: Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <h2 class="section-title">Education</h2>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                Bachelor of Science in Computer Science
+              </h5>
+              <p class="card-text">University of ABC - 2014 to 2018</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li>Web Development</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>Node.js</li>
+            <li>React</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
